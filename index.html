@@ -25,61 +25,62 @@
               <div class="customized-buttons">
                 <div class="mt-5">
                     <h6 class="fw-bold">Memory</h6>
-                    <button type="button" class="btn btn-outline-dark">8GB unified memory</button>
-                    <button type="button" class="btn btn-outline-dark">16GB unified memory</button>
+                    <button id="defalut-memory" type="button" class="btn btn-outline-dark">8GB unified memory</button>
+                    <button id="customized-memory" type="button" class="btn btn-outline-dark">16GB unified memory</button>
                 </div>
                 <div class="mt-5">
                     <h6 class="fw-bold">Storage</h6>
-                    <button type="button" class="btn btn-outline-dark">256GB SSD storage</button>
-                    <button type="button" class="btn btn-outline-dark">512GB SSD storage</button>
-                    <button type="button" class="btn btn-outline-dark">1TB SSD storage</button>
+                    <button id="default-storage" type="button" class="btn btn-outline-dark">256GB SSD storage</button>
+                    <button id="customized1-storage" type="button" class="btn btn-outline-dark">512GB SSD storage</button>
+                    <button id="customized2-storage" type="button" class="btn btn-outline-dark">1TB SSD storage</button>
                 </div>
                 <div class="mt-5">
                     <h6 class="fw-bold">Choose your delivery option</h6>
-                    <button type="button" class="btn btn-outline-dark">Friday, Aug 25 FREE Prime Delivery</button>
-                    <button type="button" class="btn btn-outline-dark">Friday, Aug 21 Delivery change $20</button>
+                    <button id="freeDelivery" type="button" class="btn btn-outline-dark">Friday, Aug 25 FREE Prime Delivery</button>
+                    <button id="chargesDelivery" type="button" class="btn btn-outline-dark">Friday, Aug 21 Delivery change $20</button>
                 </div>
 
               </div>
               <!-- macbook price section -->
               <div class="row mt-5">
                 <div class="col-6 col-sm-4"><h6 class="fw-bold">Best Price</h6></div>
-                <div class="col-6 col-sm-4"><h6 class="fw-bold">$1299</h6></div>
+                <div class="col-6 col-sm-4"><h6 class="fw-bold">$<span id="macbookPrice">1299</span></h6></div>
                 <hr class="col-5">
                 <!-- Force next columns to break to new line at md breakpoint and up -->
                 <div class="w-100 d-none d-md-block"></div>
 
                 <div class="col-6 col-sm-4"><h6 class="fw-bold">Extra Memory Cost</h6></div>
-                <div class="col-6 col-sm-4"><h6 class="fw-bold">$0</h6></div>
+                <div class="col-6 col-sm-4"><h6 class="fw-bold">$<span id="memoryPrice">0</span></h6></div>
                 <hr class="col-5">
                 <!-- Force next columns to break to new line at md breakpoint and up -->
                 <div class="w-100 d-none d-md-block"></div>
 
                 <div class="col-6 col-sm-4"><h6 class="fw-bold">Extra Storage Cost</h6></div>
-                <div class="col-6 col-sm-4"><h6 class="fw-bold">$0</h6></div>
+                <div class="col-6 col-sm-4"><h6 class="fw-bold">$<span id="storagePrice">0</span></h6></div>
                 <hr class="col-5">
                 <!-- Force next columns to break to new line at md breakpoint and up -->
                 <div class="w-100 d-none d-md-block"></div>
                 
                 <div class="col-6 col-sm-4"><h6 class="fw-bold">Delivery charge</h6></div>
-                <div class="col-6 col-sm-4"><h6 class="fw-bold">$0</h6></div>
-                <hr class="col-5 fw-bold">
+                <div class="col-6 col-sm-4"><h6 class="fw-bold">$<span id="chargePrice">0</span></h6></div>
+                <hr class="col-5">
                 <!-- Force next columns to break to new line at md breakpoint and up -->
                 <div class="w-100 d-none d-md-block"></div>
                 
                 <div class="col-6 col-sm-4"><h6 class="fw-bold">Total Price</h6></div>
-                <div class="col-6 col-sm-4"><h6 class="fw-bold">$1299</h6></div>
-                <hr class="col-5 fw-bold">
+                <div class="col-6 col-sm-4"><h6 class="fw-bold">$<span id="total-price">1299</span></h6></div>
+                <hr class="col-5" style="color: black;">                
                 <!-- Force next columns to break to new line at md breakpoint and up -->
                 <div class="w-100 d-none d-md-block"></div>
-                <span class="fw-bold">Add Promo code</span>
-                <div class="col-6 col-sm-4"><input class="form-control" type="text"></div>
-                <div class="col-6 col-sm-4"><button type="button" class="btn btn-danger input-group-text">Apply</button></div>             
+
+                <span>Add Promo code</span>
+                <div class="col-6 col-sm-4"><input id="promo-code" class="form-control" type="text"></div>
+                <div class="col-6 col-sm-4"><button id="discounted-btn" type="button" class="btn btn-danger input-group-text">Apply</button></div>             
               </div>
             </div>
-          </div>
+        </div>
           <hr>
-          <h2 class="text-center">Total: $1299 </h2>
+          <h2 class="text-center">Total: $<span id="discounted-price">1299</span></h2>
     </main>
     <footer>
 
