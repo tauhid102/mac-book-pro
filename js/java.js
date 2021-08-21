@@ -1,38 +1,38 @@
 //memory price calculate 
 function memoryPrice(memoryID){
-    const price = 0;
+
     if(memoryID+'-memory'=='defalut-memory'){
-        document.getElementById('memoryPrice').innerText=price;
+        document.getElementById('memoryPrice').innerText=0;
     }
     else if(memoryID+'-memory'=='customized-memory'){
-        document.getElementById('memoryPrice').innerText=price+180;
+        document.getElementById('memoryPrice').innerText=180;
     }
     totalPrice();
 }
 
 //storage price calculate
 function storagePrice(storageID){
-    const price = 0;
+    
     if(storageID+'-storage'=='default-storage'){
-        document.getElementById('storagePrice').innerText=price;
+        document.getElementById('storagePrice').innerText=0;
     }
     else if(storageID+'-storage'=='customized1-storage'){
-        document.getElementById('storagePrice').innerText=price+100;
+        document.getElementById('storagePrice').innerText=100;
     }
     else if(storageID+'-storage'=='customized2-storage'){
-        document.getElementById('storagePrice').innerText=price+180;
+        document.getElementById('storagePrice').innerText=180;
     }
     totalPrice()
 }
 
 //delivery charges calculate
 function deliveryCharges(deliveryID){
-    const charge = 0;
+    
     if(deliveryID+'Delivery'=='freeDelivery'){
-        document.getElementById('chargePrice').innerText=charge;
+        document.getElementById('chargePrice').innerText=0;
     }
     else if(deliveryID+'Delivery'=='chargesDelivery'){
-        document.getElementById('chargePrice').innerText=charge+20;
+        document.getElementById('chargePrice').innerText=20;
     }
     totalPrice()
 }
@@ -77,14 +77,14 @@ document.getElementById('chargesDelivery').addEventListener('click',function(){
     deliveryCharges('charges');
 })
 
-//apply promo code
+//apply promo code apply
 document.getElementById('discounted-btn').addEventListener('click',function(){
     const totalPriceText = document.getElementById('total-price');
-    const totalPrice = parseFloat(totalPriceText.innerText);
+    const price = parseFloat(totalPriceText.innerText);
     const userInputField = document.getElementById('promo-code');
     const userInput = userInputField.value;
     if('stevekaku' == userInput){
-        const discount = totalPrice-(totalPrice*.2);
+        const discount = price-(price*.2);
         document.getElementById('discounted-price').innerText=discount;
         userInputField.value='';
     }
