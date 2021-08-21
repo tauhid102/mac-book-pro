@@ -79,17 +79,18 @@ document.getElementById('chargesDelivery').addEventListener('click',function(){
 
 //apply promo code
 document.getElementById('discounted-btn').addEventListener('click',function(){
-    const subTotalText = document.getElementById('discounted-price').innerText;
-    const subTotal = parseFloat(subTotalText);
-    const userInput = document.getElementById('promo-code').value;
+    const totalPriceText = document.getElementById('total-price');
+    const totalPrice = parseFloat(totalPriceText.innerText);
+    const userInputField = document.getElementById('promo-code');
+    const userInput = userInputField.value;
     if('stevekaku' == userInput){
-        const discount = subTotal-(subTotal*.2);
+        const discount = totalPrice-(totalPrice*.2);
         document.getElementById('discounted-price').innerText=discount;
-        document.getElementById('promo-code').value='';
+        userInputField.value='';
     }
     else{
         alert('Right Valid Promo Code');
-        document.getElementById('promo-code').value=''
+        userInputField.value=''
         
     }
 })
