@@ -1,11 +1,11 @@
 //memory price calculate 
 function memoryPrice(memoryID){
-
+    const memory=document.getElementById('memoryPrice');
     if(memoryID+'-memory'=='defalut-memory'){
-        document.getElementById('memoryPrice').innerText=0;
+        memory.innerText=0;
     }
     else if(memoryID+'-memory'=='customized-memory'){
-        document.getElementById('memoryPrice').innerText=180;
+        memory.innerText=180;
     }
     totalPrice();
 }
@@ -13,14 +13,15 @@ function memoryPrice(memoryID){
 //storage price calculate
 function storagePrice(storageID){
     
+    const storage = document.getElementById('storagePrice');
     if(storageID+'-storage'=='default-storage'){
-        document.getElementById('storagePrice').innerText=0;
+        storage.innerText=0;
     }
     else if(storageID+'-storage'=='customized1-storage'){
-        document.getElementById('storagePrice').innerText=100;
+        storage.innerText=100;
     }
     else if(storageID+'-storage'=='customized2-storage'){
-        document.getElementById('storagePrice').innerText=180;
+        storage.innerText=180;
     }
     totalPrice()
 }
@@ -28,11 +29,12 @@ function storagePrice(storageID){
 //delivery charges calculate
 function deliveryCharges(deliveryID){
     
+    const delivery = document.getElementById('chargePrice');
     if(deliveryID+'Delivery'=='freeDelivery'){
-        document.getElementById('chargePrice').innerText=0;
+        delivery.innerText=0;
     }
     else if(deliveryID+'Delivery'=='chargesDelivery'){
-        document.getElementById('chargePrice').innerText=20;
+        delivery.innerText=20;
     }
     totalPrice()
 }
